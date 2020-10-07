@@ -48,7 +48,7 @@ class qm:
                     #print(self.url+img)
                     r = requests.get(self.url+img)
                     #img,'.jpg'
-                    with open(qname+ '.jpg', 'wb') as code:
+                    with open(qname+ '.png', 'wb') as code:
                         code.write(r.content)
                 except:
                     input(print("生成出错!"))
